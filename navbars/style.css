@@ -4,15 +4,26 @@
 }
 
 body{
-	background:#222;
+	background:#ddd;
 	display:flex;
 	align-items:center;
 	justify-content:center;
 }
 
+.item {
+	display:flex;
+	align-items:center;
+	justify-content:center;
+	width:50vmin;
+	border:3px solid hsla(10,80%,60%,0.3);
+	background:#333;
+	margin:2rem 0;
+	padding:3rem 0;
+}
+
 .one {
 	padding:1rem 1rem 0.75rem 1rem;
-	font-size:1rem;
+	font-size:1.5rem;
 	font-family:arial;
 	text-transform:upperCase;
 	color:#eee;
@@ -35,18 +46,64 @@ body{
 
 .one .active{
 	color:#92d14f;
+	cursor:default;
+}
+
+.one .active:hover{
+	color:#92d14f;
 }
 
 .one li:hover{
 	color:#bdf59a;
 }
 
-.dot {
+.one .dot {
 	opacity:0;
-	transition:400ms;
-	width:0.6rem;
-	height:0.6rem;
+	transition:500ms;
+	width:1rem;
+	height:1rem;
 	background:#bade7c;
 	border-radius:50%;
 	margin:3px 0;
+	transition-timing-function: ease-in-out;
 }
+
+.two {
+	color:#fff;
+	padding:1rem;
+	font-family:courier,monospace;
+	text-transform:capitalize;
+	font-size:1.5rem;	
+}
+
+.two ul{
+	list-style:none;
+	display:flex;
+}
+
+.two li{
+	margin:0 1rem;
+	cursor:pointer;
+}
+
+.two .line{
+	transform: scale(0,0);
+	width:100%;
+	height:3px;
+	background:pink;
+	transition:450ms;
+	transition-timing-function: ease-in-out;
+}
+
+.two .active .line{
+	transform:scale(1,1)
+}
+
+.two .line:hover{
+	
+}
+
+.two li:hover .line{
+	transform:scale(1,1)
+}
+
