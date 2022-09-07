@@ -1,0 +1,20 @@
+body {
+	display:flex;
+	align-items:center;
+	justify-content:center;	
+}
+
+.shop {
+	background:hsla(1,100%,100%,0);
+	border:none;
+	box-shadow:0 0 0 5px black,6px 6px 0 5px cyan,-4px -5px 0 5px pink;
+	transition:350ms;
+	cursor:pointer;
+	font-family: 'Kreon', serif;
+	font-size:1.75rem;
+	padding: 0.75rem 2rem;
+}
+
+.shop:hover {
+	box-shadow:0 0 0 4px black,-3px -4px 0 5px cyan,5px 5px 0 5px pink;
+}
